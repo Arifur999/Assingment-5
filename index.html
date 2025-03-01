@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F4F7FF] poppins-regular ">
+
+    <!-- nav bar -->
+
+    <nav class="  pt-4 mb-4">
+        <div class="flex justify-between w-10/12 mx-auto border rounded-lg px-8 bg-white">
+            <div class="flex items-center py-4">
+                <img class="h-9 w-9" src="./assets/logo.png" alt="">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex items-center">
+                <img class="w-8 h-7" src="./assets/checkbox.png" alt="">
+                <h1 class="text-3xl font-bold pl-2 pr-8">23</h1>
+                <img id="theme-btn" class="w-8 h-8 cursor-pointer" src="./assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="w-10/12 mx-auto ">
+
+        <div class=" gap-3 grid grid-cols-12 ">
+            <div class="col-span-9 grid grid-cols-12  bg-white gap-3 p-3 rounded">
+                <!-- box-1 -->
+                <div class="   flex border bg-[#F4F7FF] rounded-lg items-center p-3  justify-center col-span-3">
+                    <img class="w-11 h-10 pr-4" src="./assets/checkbox.png" alt="">
+                    <div>
+                        <p>Task Assigned </p>
+                        <h1 class="font-bold text-xl">06</h1>
+                    </div>
+                </div>
+                <!-- box-2 -->
+                <div
+                    class="  flex border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg  p-3 justify-center col-span-6">
+                    <img class="w-16 h-16 pr-4" src="./assets/board.png" alt="">
+                    <div>
+                        <h3 class="text-3xl text-white">Discover Something <br>New Today!</h3>
+                    </div>
+                </div>
+                <!-- box-3 -->
+                <div class="  flex border bg-[#F4F7FF] rounded-lg   p-3 justify-center items-center col-span-3">
+                    <img class="w-11 h-10 pr-4" src="./assets/calender.png" alt="">
+                    <div>
+                        
+                        <h1 id="new-date" class="font-bold">Jul 28 2025 </h1>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 ">
+                    <p class="bg-white w-fit rounded p-2">ShopEase</p>
+                    <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
+                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                    <p class="bg-white w-fit rounded p-2">CloudSync</p>
+                    <h1 class="text-xl font-bold">Add Dark Mode </h1>
+                    <p class="bg-white rounded p-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth
+                    transition effect.</p>
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                    <p class="bg-white w-fit rounded p-2">SwiftPay</p>
+                    <h1 class="text-xl font-bold">Optimize Home page </h1>
+                   <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly
+                </p>
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4"> 
+                    <p class="bg-white w-fit rounded p-2">Meta</p>
+                    <h1 class="text-xl font-bold">Add new emoji 🤲 </h1>
+                   <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                    <p class="bg-white w-fit rounded p-2">Google LLC</p>
+                    <h1 class="text-xl font-bold">Integrate OpenAI API </h1>
+                   <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p> 
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                    <p class="bg-white w-fit rounded p-2">Glassdoar</p>
+                    <h1 class="text-xl font-bold">Improve Job searching </h1>
+                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex pt-4">
+                        <div class="pr-3">
+                            <p>Deadline</p>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col-span-3">
+                <!-- box-4 -->
+                <div class="  flex border bg-white rounded-lg p-3 justify-center  min-h-screen">
+                    <img class="w-8 h-8 pr-2" src="./assets/activity.png" alt="">
+                    <div>
+                        <h1 class="text-2xl pb-2">Activity Log</h1>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg ">Clear History</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+    </main>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
