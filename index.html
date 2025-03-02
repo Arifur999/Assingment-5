@@ -31,7 +31,7 @@
             </div>
             <div class="flex items-center">
                 <img class="w-8 h-7" src="./assets/checkbox.png" alt="">
-                <h1 class="text-3xl font-bold pl-2 pr-8">23</h1>
+                <h1 id="sum-num" class="text-3xl font-bold pl-2 pr-8">23</h1>
                 <img id="theme-btn" class="w-8 h-8 cursor-pointer" src="./assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -46,12 +46,12 @@
                     <img class="w-11 h-10 pr-4" src="./assets/checkbox.png" alt="">
                     <div>
                         <p>Task Assigned </p>
-                        <h1 class="font-bold text-xl">06</h1>
+                        <h1 id="num" class="font-bold text-xl">06</h1>
                     </div>
                 </div>
                 <!-- box-2 -->
                 <div
-                    class="  flex border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg  p-3 justify-center col-span-6">
+                    id="home-dsk" class="cursor-pointer flex border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg  p-3 justify-center col-span-6">
                     <img class="w-16 h-16 pr-4" src="./assets/board.png" alt="">
                     <div>
                         <h3 class="text-3xl text-white">Discover Something <br>New Today!</h3>
@@ -61,7 +61,7 @@
                 <div class="  flex border bg-[#F4F7FF] rounded-lg   p-3 justify-center items-center col-span-3">
                     <img class="w-11 h-10 pr-4" src="./assets/calender.png" alt="">
                     <div>
-                        
+
                         <h1 id="new-date" class="font-bold">Jul 28 2025 </h1>
                     </div>
                 </div>
@@ -69,10 +69,11 @@
 
 
 
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 ">
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button ">
                     <p class="bg-white w-fit rounded p-2">ShopEase</p>
-                    <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
-                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    <h1 class="text-xl font-bold task-head">Fix Mobile Button Issue </h1>
+                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and
+                        ensure onClick works properly</p>
                     <div class="flex pt-4">
                         <div class="pr-3">
                             <p>Deadline</p>
@@ -82,26 +83,28 @@
                     </div>
 
                 </div>
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button">
                     <p class="bg-white w-fit rounded p-2">CloudSync</p>
-                    <h1 class="text-xl font-bold">Add Dark Mode </h1>
-                    <p class="bg-white rounded p-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth
-                    transition effect.</p>
+                    <h1 class="text-xl font-bold task-head">Add Dark Mode </h1>
+                    <p class="bg-white rounded p-2">Store the user's preference in localStorage, update CSS variables
+                        dynamically, and apply a smooth
+                        transition effect.</p>
                     <div class="flex pt-4">
                         <div class="pr-3">
                             <p>Deadline</p>
-                            <h2 class="font-bold">21 March 2025</h2>
+                            <h2 class="font-bold ">21 March 2025</h2>
                         </div>
                         <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
                     </div>
 
                 </div>
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button">
                     <p class="bg-white w-fit rounded p-2">SwiftPay</p>
-                    <h1 class="text-xl font-bold">Optimize Home page </h1>
-                   <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                    and ensure onClick works properly
-                </p>
+                    <h1 class="text-xl font-bold task-head">Optimize Home page </h1>
+                    <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and
+                        ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
                     <div class="flex pt-4">
                         <div class="pr-3">
                             <p>Deadline</p>
@@ -111,11 +114,12 @@
                     </div>
 
                 </div>
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4"> 
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button">
                     <p class="bg-white w-fit rounded p-2">Meta</p>
-                    <h1 class="text-xl font-bold">Add new emoji 🤲 </h1>
-                   <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                    and ensure onClick works properly</p>
+                    <h1 class="text-xl font-bold task-head">Add new emoji 🤲 </h1>
+                    <p class="bg-white rounded p-2"> Debug using Chrome DevTools, check for overlapping elements, and
+                        ensure onClick works properly
+                        and ensure onClick works properly</p>
                     <div class="flex pt-4">
                         <div class="pr-3">
                             <p>Deadline</p>
@@ -125,11 +129,12 @@
                     </div>
 
                 </div>
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button">
                     <p class="bg-white w-fit rounded p-2">Google LLC</p>
-                    <h1 class="text-xl font-bold">Integrate OpenAI API </h1>
-                   <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                    and ensure onClick works properly</p> 
+                    <h1 class="text-xl font-bold task-head">Integrate OpenAI API </h1>
+                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and
+                        ensure onClick works properly
+                        and ensure onClick works properly</p>
                     <div class="flex pt-4">
                         <div class="pr-3">
                             <p>Deadline</p>
@@ -139,10 +144,11 @@
                     </div>
 
                 </div>
-                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4">
+                <div class="row-span-2 space-y-2 mt-3 bg-[#F4F7FF] border rounded-lg p-4 col-span-4 com-button">
                     <p class="bg-white w-fit rounded p-2">Glassdoar</p>
-                    <h1 class="text-xl font-bold">Improve Job searching </h1>
-                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    <h1 class="text-xl font-bold task-head">Improve Job searching </h1>
+                    <p class="bg-white rounded p-2">Debug using Chrome DevTools, check for overlapping elements, and
+                        ensure onClick works properly
                         and ensure onClick works properly</p>
                     <div class="flex pt-4">
                         <div class="pr-3">
@@ -165,12 +171,15 @@
             </div>
             <div class="col-span-3">
                 <!-- box-4 -->
-                <div class="  flex border bg-white rounded-lg p-3 justify-center  min-h-screen">
+                <div id="activitys" class="  flex border bg-white rounded-lg p-3 justify-center  h-[810px]">
                     <img class="w-8 h-8 pr-2" src="./assets/activity.png" alt="">
                     <div>
                         <h1 class="text-2xl pb-2">Activity Log</h1>
-                        <button class="bg-[#3752FD] text-white p-2 rounded-lg ">Clear History</button>
 
+                        <button id="clear-history" class="bg-[#3752FD] text-white p-2 rounded-lg items-center ">Clear History</button>
+                        <div id="all-task">
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,5 +190,6 @@
     </main>
 </body>
 <script src="./js/main.js"></script>
+
 
 </html>

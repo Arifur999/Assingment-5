@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+<body class="bg-[#F4F7FF] poppins-regular ">
+    <nav class="  pt-4 mb-4">
+        <div class="flex justify-between w-10/12 mx-auto border rounded-lg px-8 bg-white">
+            <div class="flex items-center py-4">
+                <img class="h-9 w-9" src="./assets/logo.png" alt="">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class=" flex items-center justify-center">
+                <a href="index.html" id="second-dsk" class="p-3 rounded-lg bg-blue-400 text-white cursor-pointer ">Back to desk</a>
+            </div>
+            
+        </div>
+    </nav>
+        <div class="font-bold text-2xl flex justify-center my-3">Blogs
+
+        </div>
+            
+    <div class="w-10/12 mx-auto min-h-screen">
+
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm">DOM (Document Object Model) এটি সাধারণত ৫ রকম ভাবে  ডিক্লেয়ার করা যায় <br>
+
+                1 -  getElementById যাতে শুধু ইউনিক এলিমেন্ট কল করাতে ব্যবহার করা হয়। <br>
+                2 - getElementsByClassName কে একাধিক এলিমেন্ট কল করার জন্য ব্যবহার করা হয়। <br>
+                3 - get ElementsByTagName নির্দিষ্ট ট্যাগের এলিমেন্টকে কল করতে ব্যবহার করা হয়। <br>
+                4 - querySelector প্রথম সিলেক্টরকে কল করতে ব্যবহৃত হয় <br>
+                5 - querySelectorAll একাধিক CSS query selector কে কল করতে ব্যবহৃত হয়
+                </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+            </div>
+            <div class="collapse-content text-sm">innerHTML, innerText, এবং textContent—এই তিনটি প্রপার্টি <br>
+                1. innerHTML এটি কোনো element-এর মধ্যে HTML কোড নতুন করে লেখাটা সরাসরি HTML ফাইলে পাঠানো যায় <br>
+                2. innerText এটি ব্যবহার করে কোন string এর মান যাচাই করা হয় এবং কোন নাম্বার যদি string  হয় তাহলে তাকেও নাম্বারে কনভার্ট করা যায় <br>
+                3. textContent এটি innerText-এর মতো কাজ করে, তবে HTML ট্যাগ থাকলেও সেটিকে উপেক্ষা করে এবং পুরো টেক্সট কে দেখায়
+                </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?
+
+            </div>
+            <div class="collapse-content text-sm">Event Delegation হলো একটি JavaScript একটি প্রক্রিয়া যেখানে একটি  parent এলিমেন্টে তার ভেতরের যেসব  child  এলিমেন্টে থাকে তাদেরকে কন্ট্রোল করা যায় প্রতিটি child কে আলাদা আলাদা না ধরে parent কে ধরে কাজ করা যায় এতে অনেক সময় বেঁচে যায় এবং বেশি কোড লেখতে হয় না।
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?
+
+
+
+            </div>
+            <div class="collapse-content text-sm">Event Bubbling এর মাধ্যমে  কোনো child এলিমেন্টে ইভেন্ট ঘটলে, সেটি তার parent এবং তার উপরের সমস্ত parent দিকে ছড়িয়ে পড়ে। এটি মূলত নিচ থেকে উপরে এবং উপর থেকে নিচে পরিচালিত হয় বলে এটিকে  Bubbling বলে।
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?
+
+
+
+            </div>
+            <div class="collapse-content text-sm">1.নতুন এলিমেন্ট তৈরি: createElement() <br>
+                2.নতুন এলিমেন্ট যোগ: appendChild(), prepend() <br>
+                3. এলিমেন্ট মুছে ফেলা: removeChild(), remove() <br>
+                4.এলিমেন্ট পরিবর্তন: replaceChild() <br>
+                </div>
+          </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
