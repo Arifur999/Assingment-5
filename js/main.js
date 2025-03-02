@@ -25,64 +25,60 @@ for (let i = 0; i < comButtons.length; i++) {
             alert("congrates!!!you complete all task");
         }
 
+        let taskHeadElement = comBtn.querySelector(".task-head");
+        let taskHeadText = taskHeadElement ? taskHeadElement.innerText : "No task heading"; 
+       
+
+        let now = new Date();
+        let formattedTime = now.toLocaleDateString("en-US", {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+
+        })
 
 
-
-        let taskHead = document.querySelectorAll(".task-head")
-
-   
-
-
-                let now = new Date();
-                let formattedTime = now.toLocaleDateString("en-US", {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit',
-                    hour12: true
-
-                })
-
-
-
-                document.getElementById("activitys")
-                let allTask = document.getElementById("all-task")
-                let newParagraph = document.createElement('p');
-                newParagraph.classList.add(
-                    'p-4',
-                    'bg-[#F4F7FF]',
-                    'rounded-lg',
-                    'm-2'
-
-                );
-                newParagraph.innerText = ` ${taskHead}at ${formattedTime}`
-                allTask.appendChild(newParagraph);
-
-          
 
         
+        let allTask = document.getElementById("all-task")
+        let newParagraph = document.createElement('p');
+        newParagraph.classList.add(
+            'p-4',
+            'bg-[#F4F7FF]',
+            'rounded-lg',
+            'm-2'
+
+        );
+        newParagraph.innerText = ` ${taskHeadText}at ${formattedTime}`
+        allTask.appendChild(newParagraph);
+
+
+
+
 
 
     })
 
 }
-document.getElementById("clear-history").addEventListener("click",function(){
-    document.getElementById("all-task").innerHTML="";
+document.getElementById("clear-history").addEventListener("click", function () {
+    document.getElementById("all-task").innerHTML = "";
 });
 
 
-document.getElementById("theme-btn").addEventListener("click",function(){
+document.getElementById("theme-btn").addEventListener("click", function () {
 
 })
-function getRandomColor(){
-    let getRandomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+function getRandomColor() {
+    let getRandomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
     return getRandomColor;
 }
-document.getElementById("theme-btn").addEventListener("click",function(){
-    document.body.style.backgroundColor=getRandomColor();
+document.getElementById("theme-btn").addEventListener("click", function () {
+    document.body.style.backgroundColor = getRandomColor();
 })
 
 
-document.getElementById("home-dsk").addEventListener("click",function(){
+document.getElementById("home-dsk").addEventListener("click", function () {
     window.location.href = "second.html";
 
 })
